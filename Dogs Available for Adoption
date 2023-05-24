@@ -1,0 +1,18 @@
+CREATE TABLE dogs (id INTEGER PRIMARY KEY, color TEXT, breed TEXT, quantity INTEGER, attitude TEXT, price INTEGER);
+INSERT INTO dogs VALUES (1, "yellow", "lab", 5, "calm", 500);
+INSERT INTO dogs VALUES (2, "black", "lab", 10, "aggressive", 100);
+INSERT INTO dogs VALUES (3, "brown", "lab", 8, "aggressive", 250);
+INSERT INTO dogs VALUES (4, "black", "pitbull", 10, "calm", 200);
+INSERT INTO dogs VALUES (5, "brown", "pitbull", 8, "calm", 200);
+INSERT INTO dogs VALUES (6, "white", "pitbull", 10, "aggressive", 200);
+INSERT INTO dogs VALUES (7, "gray", "poodle", 8, "aggresive", 850);
+INSERT INTO dogs VALUES (8, "black", "poodle", 10, "aggressive", 900);
+INSERT INTO dogs VALUES (9, "brown", "poodle", 8, "calm", 750);
+INSERT INTO dogs VALUES (10, "black", "husky", 10, "calm", 800);
+INSERT INTO dogs VALUES (11, "brown", "husky", 8, "aggressive", 850);
+INSERT INTO dogs VALUES (12, "white", "husky", 10, "aggressive", 700);
+INSERT INTO dogs VALUES (13, "brown", "mixed", 8, "calm", 250);
+INSERT INTO dogs VALUES (14, "black", "mixed", 10, "calm", 100);
+INSERT INTO dogs VALUES (15, "white", "mixed", 8, "aggressive", 120);
+
+SELECT * FROM dogs where breed is "lab" or color is "brown" order by price;

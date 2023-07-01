@@ -1,0 +1,11 @@
+CREATE table fitness_app (id INTEGER PRIMARY KEY, weight INTEGER, exercise TEXT, duration_min INTEGER, max_HR INTEGER, intensity TEXT);
+
+INSERT into fitness_app (weight, exercise, duration_min, max_HR, intensity) VALUES (135, "HIIT", 30, 190, "difficult");
+INSERT into fitness_app (weight, exercise, duration_min, max_HR, intensity) VALUES (133, "Strength", 30, 124, "difficult");
+INSERT into fitness_app (weight, exercise, duration_min, max_HR, intensity) VALUES (136, "Walking", 45, 100, "easy");
+INSERT into fitness_app (weight, exercise, duration_min, max_HR, intensity) VALUES (133, "HIIT", 20, 190, "difficult");
+INSERT into fitness_app (weight, exercise, duration_min, max_HR, intensity) VALUES (129, "HIIT", 30, 190, "difficult");
+SELECT * FROM fitness_app;
+UPDATE fitness_app SET duration_min = 20 WHERE id = 1;
+DELETE from fitness_app WHERE id = 3;
+SELECT * FROM fitness_app;
